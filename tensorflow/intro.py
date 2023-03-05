@@ -12,4 +12,10 @@ print(tf.rank(tensor_rank1))
 
 # Rank/Degree 2 tensor (aka Matrice)
 tensor_rank2 = tf.Variable([[1, 2], [3, 4]], tf.int16)
-print(tf.rank(tensor_rank2));
+print(tf.rank(tensor_rank2))
+
+
+t = tf.ones([2, 1, 3])
+
+t = tf.reshape(t, [2, -1])
+print(t)
